@@ -23,3 +23,7 @@ Tiếp theo:
 * Start app bằng câu lệnh:
 
 `python server.py`
+
+* Và thu được thành quả sau cùng:
+
+![](https://camo.githubusercontent.com/397ac964981f3388ffaed09e4affcaa27642af4c/68747470733a2f2f696d6775722e636f6d2f546e56553742792e706e67)
