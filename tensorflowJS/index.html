@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Keras MobileNet + TensorFlow.js Demo</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+	<script type="text/javascript" src="js/mobile-net.js"></script>
+	<script type="text/javascript" src="js/imagenet_classes.js"></script> 
+</head>
+<body>
+	<div class="container">
+		<div class="mobilenet-demo-container">
+			<h2>Khanh Blog Image classification</h2>
+			<div class="turtorial">
+				<p><b>Turtorial</b></p>
+				<p>1. Load model First</p>
+				<p>2. Load image Second</p>
+				<p>3. Predict Last</p>
+			</div>
+			<div class="demo-wrapper">
+				<div>
+					<button id="load-button" class="input-button" onclick="loadModel()">Load Model</button>
+					<label for="select-file-image" class="input-button">
+						Upload Image
+					</label>
+					
+					<input type='file' id="select-file-image" onchange="loadImageLocal()" style="display: None" />
+					<div id="progress-box" style="display: None; width: 100% !important;">
+						<img src="assets/loading.gif" id="demo-load" width="100px" />
+						<p id="progress-box-content" style="color: white;">Loading mobilenet model..</p>
+					</div>
+				</div>
+				<div>
+					<button id="predict-button" class="input-button predict-button" onclick="predictImage()">Predict</button>
+				</div>
+			</div>
+			<div class="demo-output">
+				<div class="out-box" id="select-file-box" style="display: none;">
+					<img id='test-image' />
+				</div>
+				<div class="out-box" id="predict-box" style="display: none;">
+					<p id="prediction"></p>
+					<br>
+					<p><b style="color: #c2c2c2 !important; font-style: italic; font-weight: 100; font-size: 11px;">Top-5 Predictions</b></p>
+					<ul id="predict-list">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

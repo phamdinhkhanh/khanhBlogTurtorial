@@ -1,0 +1,192 @@
+// mobile media query
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+// tablet media query
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// fonts
+$font_header : 'Nunito', sans-serif;
+$font_body   : 'Nunito', sans-serif;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font_body;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+// main style code
+.mobilenet-demo-container {
+  background-color: #3949ab;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 680px;
+
+  .demo-wrapper {
+    display: table;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include tablet {
+      padding-bottom: 0px;
+    }
+
+    @include mobile {
+      padding: 0px;
+    }
+
+    div {
+      display: table-cell;
+      width: 60%;
+      @include mobile {
+        display: table-row;
+      }
+    }
+    div:nth-child(1) {
+      text-align: left;
+      @include mobile {
+        text-align: center;
+      }
+    }
+    div:nth-child(2) {
+      text-align: right;
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 15px;
+    background-color: #4dd0e1;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid #24a8b9;
+    border-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: Nunito;
+  }
+
+  .input-button {
+    background-color: #f50057;
+    color: white;
+    border-radius: 5px;
+    font-family: $font_body;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #f50057;
+    font-size: 12px;
+    margin: 20px 5px;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .input-button:hover {
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.22);
+  }
+
+  .input-button:focus {
+    outline: none;
+  }
+
+  .demo-output {
+    display: flex;
+    width: 100%;
+    background-color: #3949ab;
+  }
+
+  .out-box {
+    display: table-cell;
+    width: 50%;
+    margin: 0px auto;
+    padding: 0px 10px 10px 10px;
+    background-color: #3949ab;
+    p {
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 0px !important;
+    }
+    b {
+      color: #ffcc00;
+      font-size: 25px;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  select {
+    @include mobile {
+      margin-top: 25px;
+    }
+  }
+
+  .predict-button {
+    background-color: #ffcc00;
+    border: 1px solid #ffcc00;
+    color: black;
+  }
+
+  .predict-button:hover {
+    background-color: #ffcc00;
+  }
+
+  #demo-progress {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  #results-box {
+    padding: 0px 10px !important;
+    width: 100% !important;
+  }
+
+  #load-button {
+    position: relative;
+  }
+
+  #load-button span {
+    display: block;
+    width: 22px;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #ebebeb;
+    color: black;
+    position: absolute;
+    top: -30px;
+    left: 35px;
+    font-weight: bold;
+  }
+
+  #progress-bar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+  }
+
+  #predict-list {
+    margin: 0px;
+    color: white;
+    padding-bottom: 20px;
+    font-size: 11px;
+  }
+}

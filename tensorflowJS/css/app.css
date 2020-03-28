@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Monospace", sans-serif; }
+
+.container {
+  width: 100%;
+  height: auto; }
+
+.mobilenet-demo-container {
+  background-color: #ccc3ea;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 680px; }
+  .mobilenet-demo-container .turtorial {
+    display:table;
+    padding: 10px;
+    font-size: 12;
+    width: 50%;
+    max-width: 200px;
+    min-width: 100px;
+  }
+  .mobilenet-demo-container .demo-wrapper {
+    display: table;
+    padding-width: 20px;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .mobilenet-demo-container .demo-wrapper {
+        padding-bottom: 0px; } }
+    @media screen and (max-width: 1024px) {
+      .mobilenet-demo-container .demo-wrapper {
+        padding: 0px; } }
+    .mobilenet-demo-container .demo-wrapper div {
+      display: table-cell;
+      width: 80%; }
+      @media screen and (max-width: 640px) {
+        .mobilenet-demo-container .demo-wrapper div {
+          display: table-row; } }
+    .mobilenet-demo-container .demo-wrapper div:nth-child(1) {
+      text-align: left; }
+      @media screen and (max-width: 640px) {
+        .mobilenet-demo-container .demo-wrapper div:nth-child(1) {
+          text-align: center; } }
+    .mobilenet-demo-container .demo-wrapper div:nth-child(2) {
+      text-align: right; }
+      @media screen and (max-width: 640px) {
+        .mobilenet-demo-container .demo-wrapper div:nth-child(2) {
+          text-align: center; } }
+  .mobilenet-demo-container h2 {
+    font-size: 25px;
+    background-color: #880d90;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid #24a8b9;
+    border-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: Monospace; }
+  .mobilenet-demo-container .input-button {
+    background-color: #28195a;
+    color: white;
+    border-radius: 5px;
+    font-family: "Monospace", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #28195a;
+    font-size: 12px;
+    margin: 20px 5px;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .mobilenet-demo-container .input-button:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.22); }
+  .mobilenet-demo-container .input-button:focus {
+    outline: none; }
+  .mobilenet-demo-container .demo-output {
+    display: flex;
+    width: 100%;
+    background-color: #ccc3ea; }
+  .mobilenet-demo-container .out-box {
+    display: table-cell;
+    width: 60%;
+    margin: 0px auto;
+    padding: 0px 10px 10px 10px;
+    background-color: #ccc3ea; }
+    .mobilenet-demo-container .out-box p {
+      color: black;
+      margin-top: 0px;
+      margin-bottom: 0px !important; }
+    .mobilenet-demo-container .out-box b {
+      color: #c9a61a;
+      font-size: 25px; }
+      @media screen and (max-width: 640px) {
+        .mobilenet-demo-container .out-box b {
+          font-size: 18px; } }
+    @media screen and (max-width: 640px) {
+      .mobilenet-demo-container .out-box {
+        width: 100%; } }
+  @media screen and (max-width: 640px) {
+    .mobilenet-demo-container select {
+      margin-top: 25px; } }
+  .mobilenet-demo-container .predict-button {
+    background-color: #c9a61a;
+    border: 1px solid #c9a61a;
+    padding: 5px;
+    margin-right: 20px;
+    color: black; }
+  .mobilenet-demo-container .predict-button:hover {
+    padding: 5px;
+    background-color: #c9a61a; }
+  .mobilenet-demo-container #demo-progress {
+    width: 100%;
+    background-color: #ddd; }
+  .mobilenet-demo-container #results-box {
+    padding: 0px 10px !important;
+    width: 100% !important; }
+  .mobilenet-demo-container #load-button {
+    position: relative; }
+  .mobilenet-demo-container #load-button span {
+    display: block;
+    width: 22px;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #ebebeb;
+    color: black;
+    position: absolute;
+    top: -30px;
+    left: 35px;
+    font-weight: bold; }
+  .mobilenet-demo-container #progress-bar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50; }
+  .mobilenet-demo-container #predict-list {
+    margin: 0px;
+    color: black;
+    padding-bottom: 20px;
+    font-size: 11px; }
+
+/*# sourceMappingURL=app.css.map */
