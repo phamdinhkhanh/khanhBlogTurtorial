@@ -18,7 +18,7 @@ Tiếp theo:
 
 * Cài đặt các packages cần thiết trong `virtual enviroment` thông qua file `requirements.txt`.
 
-`python install -r requirements.txt --user`
+`pip install -r requirements.txt --user`
 
 * Start app bằng câu lệnh:
 
