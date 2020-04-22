@@ -20,3 +20,4 @@ AI Blogger [phamdinhkhanh.github.io](https://phamdinhkhanh.github.io/home)
 * [Bài 30 - Xây dựng Web AI trên tensorflow js](https://phamdinhkhanh.github.io/2020/03/28/deployTensorflowJS.html): Bai30-tensorflowJS
 * [Bài 32 - Kĩ thuật tensorflow Dataset](https://phamdinhkhanh.github.io/2020/04/09/TensorflowDataset.html): Bai32-tensorflowDataset
 * [Bài 33 - Kĩ thuật Transfer Learning](https://phamdinhkhanh.github.io/2020/04/15/TransferLearning.html): Bai33-transferLearning
+* [Bài 34 - Multitask Learning](https://phamdinhkhanh.github.io/2020/04/22/MultitaskLearning.html): Bai34-multitaskLearning
