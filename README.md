@@ -21,3 +21,4 @@ AI Blogger [phamdinhkhanh.github.io](https://phamdinhkhanh.github.io/home)
 * [Bài 32 - Kĩ thuật tensorflow Dataset](https://phamdinhkhanh.github.io/2020/04/09/TensorflowDataset.html): Bai32-tensorflowDataset
 * [Bài 33 - Kĩ thuật Transfer Learning](https://phamdinhkhanh.github.io/2020/04/15/TransferLearning.html): Bai33-transferLearning
 * [Bài 34 - Multitask Learning](https://phamdinhkhanh.github.io/2020/04/22/MultitaskLearning.html): Bai34-multitaskLearning
+* [Bài 35 - Multitask Learning - Multi Branch](https://phamdinhkhanh.github.io/2020/05/05/MultitaskLearning_MultiBranch.html): Bai34-multitaskLearning
